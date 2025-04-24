@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WISO</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./src/scripts/script.js" defer></script>
+    <!-- box icons  -->
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body class="overflow-x-hidden bg-[#f8f8f8]">
+    <!-- header  -->
+    <div class="bg-[#f8f8f8] flex items-center justify-between w-full">
+        <p class="pl-28 w-full flex items-center gap-3 text-sm text-gray-600"><i
+                class='bx bxs-location-plus py-2 text-[#a6a183] text-lg'></i><span>6391 Elgin St. Celina, 10299</span>
+        </p>
+        <div
+            class="flex items-center gap-10 justify-between bg-[#a6a183] w-[60%] pr-28 pl-10  py-2 text-[#f8f8f8] h-full">
+            <p class="text-sm hidden md:block">info@example.com</p>
+            <div class="flex items-center gap-4">
+                <i class='bx bxl-facebook text-lg'></i>
+                <i class='bx bxl-twitter text-lg'></i>
+                <i class='bx bxl-pinterest-alt text-lg'></i>
+            </div>
+        </div>
+    </div>
+    <!-- navigation -->
+    <nav
+        class="flex items-center w-full justify-between px-28 py-6 shadow-[0px_4px_12px_rgba(0,0,0,0.1)] sticky top-0 bg-white z-10 ">
+        <img class="w-28" src="https://oraxis.windstripedesign.ro/images/logo/header-logo.svg" alt="">
+        <ul class=" hidden md:flex items-center gap-6 text-sm font-medium">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+        <div class="flex items-center gap-6 ">
+            <i class='bx bx-cart bg-[#f8f8f8] px-2 py-1 rounded-full text-lg'></i>
+            <i class='bx bx-search text-lg'></i>
+            <button
+                class="hidden md:flex text-xs  items-center gap-2 bg-[#a6a183] text-white px-6 tracking-wide capitalize font-semibold py-2 rounded-lg  ">Get
+                a quote <i class='bx bx-right-arrow-alt text-lg'></i></button>
+        </div>
+    </nav>
+    <!-- hero section -->
+    <section class="relative flex flex-col-reverse md:block">
+
+        <div class="bg-gradient-to-b from-[#f8f8f8] to-white flex items-center px-16 py-10 justify-between mt-20">
+
+            <div class="w-[20%]">
+                <img class="w-16" src="./src/assets/img/png/star.png" alt="">
+
+            </div>
+            <div class="flex items-end w-full justify-between mr-20">
+                <div class="relative hidden md:block">
+                    <div class="absolute  -top-3 left-3  w-full h-[106%] border border-[#a6a183] rounded-lg">
+
+                    </div>
+                    <img class="w-26" src="./src/assets/img/jpg/hero02.jpg" alt="">
+                    <div class="w-5 h-5 bg-[#a6a183] rounded-md absolute -top-8 -right-8">
+
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute  -top-3 -left-3  w-full h-[104%] border border-[#a6a183] rounded-lg">
+
+                    </div>
+
+                    <img class="w-full rounded-md" src="./src/assets/img/jpg/hero01.jpg" alt="">
+
+                    <div
+                        class="absolute smooth-updown flex bg-white px-6 py-4 animate-move-up-down rounded-md items-center gap-4 right-3 bottom-10">
+                        <img class="" src="./src/assets/img/png/client.png" alt="">
+                        <div>
+                            <p class="text-lg font-bold">2,000+</p>
+                            <p class="uppercase text-gray-400 text-xs">happy client</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div
+            class="md:absolute -mb-10 mt-10 md:mt-10 md:mb-0 md:top-10 md:left-[20vw] flex flex-col items-center gap-4 ">
+            <h1 class="text-4xl md:text-6xl font-semibold leading-12 md:text-end">Discover Inspired <br> Interior Design
+            </h1>
+            <p class="md:text-end leading-6 text-sm text-gray-600 ">Lorem ipsum dolor sit amet natoqu <br>
+                consectetur adipiscing elit torquent <br>
+                nu nascetu cubilia tempor lacus</p>
+        </div>
+    </section>
+
+    <!-- about section  -->
+    <section
+        class=" flex items-center gap-6 min-h-[90vh] flex-col px-32 md:flex-row bg-white justify-between pt-10 pb-20">
+        <div class="w-full relative ">
+            <img class="pl-[60vw] pt-[100vh] md:pl-[20vw] md:pt-[14vw] smooth-updown" src="./src/assets/img/png/dot.png" alt="">
+            <div class="w-full absolute top-0 left-0">
+
+                <div class="w-full flex flex-col md:flex-row items-center gap-3 mt-10">
+                    <div
+                        class="w-full h-[200px] md:w-[18vw] md:h-[15vw] rounded-md bg-[#a6a183] text-white font-bold flex flex-col items-center text-start justify-center shadow-lg">
+                        <p class="text-4xl text-start">25+</p>
+                        <p>Years Of <br> experience</p>
+                    </div>
+                    <div class="rounded-md overflow-hidden w-full md:h-[15vw]">
+                        <img class="w-full h-full rounded-md" src="./src/assets/img/jpg/about01.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="w-full md:w-[70%] h-[15rem] md:h-[20rem] overflow-hidden rounded-md">
+                    <img class="w-full mt-4 rounded-md" src="./src/assets/img/jpg/about02.jpg" alt="">
+
+                </div>
+            </div>
+            <div
+                class="absolute smooth-updown flex bg-white px-8 py-4 animate-move-up-down rounded-md items-center gap-4 right-5 bottom-16 shadow-xl">
+                <img class="w-12" src="./src/assets/img/png/clinet2.png" alt="">
+                <div>
+                    <p class="text-lg font-bold">Alex Jones</p>
+                    <p class="uppercase text-gray-400 text-xs">Security boy</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flex flex-col  items-start justify-center mt-14 gap-4 leading-8 tracking-wide px-4 w-full">
+            <h4 class="text-[#a6a183] font-semibold pt-10">About US</h4>
+            <h1 class="text-2xl md:text-4xl font-bold tracking-wide leading-relaxed text-black">Design Your Space The A
+                Elevate Your Life</h1>
+            <p class="mt-6 text-gray-500 text-md">Lorem ipsum dolor sit amet consectetur adipiscing elit torquent nu nascetu
+                cubilia tempor lacus natoque quis auctor mattis luctus varius pretium aptent urna iaculis suspendisse
+                eros egestas mollis dis nisl commodo. </p>
+            <p class="mt-6 text-gray-500 text-md">Lorem ipsum dolor sit amet consectetur adipiscing elit torquent nu nascetu cubilia tempor lacus natoque
+                quis auctor mattis luctus varius</p>
+            <button
+                class="text-sm flex items-center gap-2 bg-[#a6a183] text-white px-8 mt-10 tracking-wide capitalize font-semibold py-4 rounded-lg  ">Read
+                More<i class='bx bx-right-arrow-alt text-lg'></i></button>
+        </div>
+    </section>
+
+    <!-- service section -->
+     <section class="service-section min-h-screen">
+        hello
+     </section>
+
+
+</body>
+
+</html>

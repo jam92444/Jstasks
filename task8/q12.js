@@ -1,0 +1,1 @@
+console.log(Math.hypot(3,4).toFixed(2)); // return 5
