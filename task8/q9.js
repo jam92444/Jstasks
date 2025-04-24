@@ -31,7 +31,8 @@ function DOB(dob) {
   const dayOfweek = resultDate.getDay();
   const resultantDay = weekDays[dayOfweek];
 
-  console.log(resultantDay);
+  console.log('You birth day:',resultantDay);
+  console.log('age:', age)
 }
 
 DOB("2003-04-01");
