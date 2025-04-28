@@ -5,7 +5,8 @@ function convertInPrice(amount,currency="INR",  locale="en-US"){
     }).format(amount); //take amount and return the formatted currency string 
 }
 
-const price = 123123.32 ;
+const price = 1231235765765757632 ;
 
 const formattedPrice = convertInPrice(price);
 console.log(formattedPrice);
+

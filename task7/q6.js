@@ -4,11 +4,9 @@ const result =
     ? value === 0
       ? "Zero"
       : value > 0
-      ? "Positive"  
+      ? "Positive"
       : "Negative"
     : "Not a number";
 console.log(result);
 
 // return Zero
-
-

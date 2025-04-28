@@ -35,4 +35,4 @@ function DOB(dob) {
   console.log('age:', age)
 }
 
-DOB("2003-04-01");
+DOB("2004-06-29");

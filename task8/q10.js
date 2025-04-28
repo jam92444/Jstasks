@@ -1,13 +1,13 @@
-// finding  past days in minutes
-
-function pastMin(date){
-    const now = new Date();
-    const userDate = new Date(date);
-    const diff = now.getDate() - userDate.getDate();
-    if(diff <= 0 && months <=0){
-        return;
-    }
-    const minutes = diff * (24 * 60);
-    console.log(minutes); 
+function MinuteCOunt(time) {
+  const userTime = new Date(time).getTime();
+  const now = new Date().getTime(); 
+  if((now - userTime)<0){
+    console.log("Future Date");  
+    return
+  }
+  const diff = Math.floor((now - userTime) / (24 * 60 * 60 * 1000));
+  return diff * 24 * 60;
 }
-pastMin('2025-04-20')
+
+console.log(MinuteCOunt("March 28, 2025 09:04:01"));
+
