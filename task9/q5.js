@@ -6,5 +6,5 @@ function pickKey(obj, ...keys) {
   return result;
 }
 
-const res = pickKey(user, "name", "email");
+const res = pickKey(user, "name","saub");
 console.log(res);
