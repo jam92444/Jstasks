@@ -39,6 +39,19 @@ const filterProduct = products
     name: item.name,
     totalStock: item.stock.store + item.stock.warehouse,
   }));
+console.log("Filtered Product: ", filterProduct);
 
-
-  console.log(filterProduct)
+const cheapest = () => {
+  let cheap = 0;
+  products.forEach((item) => {
+    if (cheap == 0) {
+      cheap = item.price;
+    }
+    if (item.price < cheap) {
+      cheap = item.price;
+    }
+  });
+  const cheapProduct = products.filter((item) => item.price == cheap);
+  return cheapProduct;
+};
+console.log("Cheapest Product: ", cheapest());
