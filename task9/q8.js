@@ -13,7 +13,6 @@ function countCharacters(str) {
       special++;
     }
   }
-
   return {
     letters,
     digits,
@@ -30,7 +29,7 @@ function validateUsername(username) {
   const special = res["special"];
 
   if (typeof validName == "string") {
-    if (letters < 4) {
+    if (username.length < 3) {
       return "Username must contain minimum 3 character.";
     } else if (digits < 1) {
       return "Username must contain atleast one Digit.";
@@ -45,4 +44,3 @@ function validateUsername(username) {
 }
 const response = validateUsername("1sdjka$12oie_dsakj");
 console.log(response);
-

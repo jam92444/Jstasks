@@ -1,0 +1,3 @@
+ else {
+      delete obj[keys];
+    }

@@ -16,3 +16,4 @@ for (const item of arrObj) {
   }
 }
 console.log("result: ", result);
+
