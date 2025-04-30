@@ -51,7 +51,9 @@ const cheapest = () => {
       cheap = item.price;
     }
   });
-  const cheapProduct = products.filter((item) => item.price == cheap);
+  const cheapProduct = products.find((item) => item.price == cheap);
   return cheapProduct;
 };
 console.log("Cheapest Product: ", cheapest());
+
+

@@ -26,28 +26,29 @@ const students = [
 ];
 
 const EnglishHighest = students
-  .filter((item) => item.courses[1].score > 90)
+  .filter((item) => item.courses.find(item => item.title==="English").score > 90)
   .map((item) => ({
     _name: item.name,
-    englishScore: item.courses[1].score,
+    englishScore: item.courses.find(item => item.title==="English" ).score ,
   }));
 
 const MathHighest = () => {
   let highest = 0;
   students.forEach((item) => {
+    let { courses} = item;
+    let courseMark = courses.find(course => course.title == "Math" ).score;
     if (highest == 0) {
-      highest = item.courses[0].score;
+      highest = courseMark;
     }
-    if (item.courses[0].score > highest) {
-      highest = item.courses[0].score;
+    if (courseMark > highest) {
+      highest = courseMark;
     }
   });
-  const data = students.filter((item) => item.courses[0].score == highest);
-  return data[0].name;
+  const data = students.find((item) => item.courses.find(cours => cours.title === "Math").score === highest);
+  return data.name;
 };
 
 
-const math = students.reduce((acc,valu)=> valu.courses[0].score > acc.courses[0].score ? valu : acc , students[0]);
 console.log("Highest Student: ", EnglishHighest);
  
 console.log("Highest Math score: ",MathHighest());

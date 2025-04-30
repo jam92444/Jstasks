@@ -4,6 +4,6 @@ const people = [
   { name: "Bob", age: 25 },
 ];
 
-let result = _.groupBy(people, ({ age }) => age);
+let result = Map.groupBy(people, ({ age }) => age);
 
 console.log(result);

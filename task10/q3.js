@@ -1,7 +1,7 @@
 const arr = [
   { id: 1, name: "A" },
   { id: 2, name: "B" },
-  { id: 1, name: "X" },
+  { id: 1, name: "A" },
 ];
 
 const newArr = () => {
