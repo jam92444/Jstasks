@@ -46,6 +46,8 @@ const MathHighest = () => {
   return data[0].name;
 };
 
+
+const math = students.reduce((acc,valu)=> valu.courses[0].score > acc.courses[0].score ? valu : acc , students[0]);
 console.log("Highest Student: ", EnglishHighest);
  
 console.log("Highest Math score: ",MathHighest());

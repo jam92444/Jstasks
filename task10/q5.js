@@ -5,3 +5,5 @@ const users = [
 ];
 const data = users.sort((a, b) => a.age - b.age);
 console.log(data);
+
+
