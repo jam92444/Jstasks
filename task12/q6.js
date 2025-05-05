@@ -58,3 +58,20 @@ function customerData(customers) {
 const data = customerData(customers);
 
 console.log(data);
+
+/*
+[
+  {
+    customerId: 1,
+    name: 'Alice',
+    totalSpent: 1340,
+    itemBreakdown: { Laptop: 1, Mouse: 1, Keyboard: 1 }
+  },
+  {
+    customerId: 2,
+    name: 'Bob',
+    totalSpent: 345,
+    itemBreakdown: { Monitor: 1, Mouse: 1 }
+  }
+]
+*/

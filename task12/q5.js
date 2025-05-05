@@ -66,3 +66,14 @@ function showAverage(obj) {
 
 const data = showAverage(departments);
 console.log(data[1].teams);
+
+/*
+ [
+  {
+    teamName: 'Content',
+    averageScore: 62.5,
+    rating: 'Needs Improvement'
+  },
+  { teamName: 'SEO', averageScore: 77.5, rating: 'Good' }
+]
+ */

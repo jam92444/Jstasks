@@ -36,3 +36,15 @@ const combineKeyValuePair = (list1) => {
 };
 
 console.log(combineKeyValuePair(list1));
+
+/*
+
+output:
+
+[
+  { id: 1, name: 'ABC', department: 'CSE' },
+  { id: 2, name: 'DEF', department: 'ECE' },
+  { id: 3, name: 'GHI', department: 'MECH' }
+]
+
+*/

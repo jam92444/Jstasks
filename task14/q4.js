@@ -33,6 +33,7 @@ const customers = [
     ],
   },
 ];
+
 const items = customers
   .map(({ orders }) => orders)
   .flat()
@@ -52,6 +53,7 @@ const count = items.reduce((acc, val) => {
 }, {});
 console.log("Items Count: ", count);
 
+
 // customer orders
 const customerOrders = (obj) => {
   const newObj = {};
@@ -66,6 +68,7 @@ const customerOrders = (obj) => {
 };
 const orders = customerOrders(customers);
 console.log("Customer Orders: ", orders);
+
 
 //average order value
 const averageOrderValue = (customer) => {
@@ -82,6 +85,8 @@ const averageOrderValue = (customer) => {
 };
 console.log("Average Order Value: ", averageOrderValue(customers));
 
+
+//Grouping items with name 
 const GroupItemWithName = (customer, unique) => {
   const finalObj = {};
 
@@ -89,6 +94,7 @@ const GroupItemWithName = (customer, unique) => {
     const purchases = customer[customerName];
     for (const key in purchases) {
       const items = purchases[key];
+      console.log(items)
       unique.forEach((prod) => {
         if (items.includes(prod)) {
           if (!finalObj[prod]) {
@@ -102,8 +108,8 @@ const GroupItemWithName = (customer, unique) => {
 
   return finalObj;
 };
-
 console.log("Grouping item with name: ", GroupItemWithName(orders, unique));
+
 
 // orders that includes a mouse
 const filterOrderByProduct = (orders, product) => {
@@ -127,6 +133,7 @@ console.log(
   "Customers who ordered mouse: ", filterOrderByProduct(orders, "Mouse")
 );
 
+
 //customer who ordered only once
 const orderOnce = (orders) => {
   const result = orders
@@ -135,6 +142,8 @@ const orderOnce = (orders) => {
   return result;
 };
 console.log("\n Ordered Only Once: ", orderOnce(customers));
+
+
 
 //product bought more than once
 const trendyProduct = (count) => {

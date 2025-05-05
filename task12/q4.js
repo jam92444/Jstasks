@@ -29,8 +29,7 @@ const students = [
 ];
 
 const studentResult = (obj) => {
-  const result = [];
-  obj.forEach(({ id, name, courses }) => {
+  const result = obj.map(({ id, name, courses }) => {
     let average = (
       courses.reduce(
         (accumulator, currentValue) => accumulator + currentValue.score,
@@ -51,10 +50,39 @@ const studentResult = (obj) => {
         .filter((item) => item.completed === true )
         .map((item) => item.title),
     };
-    result.push(studentObj);
+    return studentObj;
   });
   return result;
 };
 
 const data = studentResult(students);
 console.log(data);
+
+/*
+
+output : 
+[
+  {
+    id: 1,
+    name: 'Alice',
+    averageScore: '82.33',
+    status: 'Pass',
+    completedCourses: [ 'Math', 'Science' ]
+  },
+  {
+    id: 2,
+    name: 'Bob',
+    averageScore: '65.00',
+    status: 'Pass',
+    completedCourses: [ 'Math', 'History' ]
+  },
+  {
+    id: 3,
+    name: 'Charlie',
+    averageScore: '93.67',
+    status: 'Top Performer',
+    completedCourses: [ 'Math', 'Science', 'History' ]
+  }
+]
+
+*/

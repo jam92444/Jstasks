@@ -10,7 +10,7 @@ function prefixKeys(obj, prefix) {
     if (typeof obj !== 'object' || obj === null) return obj;
   
     const result = {};
-  
+    console.log(Object.entries(obj))
     for (const [key, value] of Object.entries(obj)) {
       const newKey = `${prefix}${key}`;
       result[newKey] = prefixKeys(value, prefix);

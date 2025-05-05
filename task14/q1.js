@@ -4,7 +4,7 @@ const items = [
     { category: 'Fruit', name: 'Banana' }
 ];
 
-function res(items){
+function pair(items){
     const result = {};
 
     items.forEach(({category,name}) => {
@@ -15,7 +15,8 @@ function res(items){
         
     });
 
-    console.log(result)
+    return result
 }
 
-res(items)
+const data = pair(items)
+console.log(data)

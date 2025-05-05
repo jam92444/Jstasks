@@ -100,7 +100,6 @@ const pendingTask = (object) => {
   object.forEach(({ teams }) => {
     teams.forEach(({ teamName, members }) => {
       let count = 0;
-
       members.forEach(({ tasks }) => {
         tasks.forEach((task) => {
           if (task.status === "In Progress") {
@@ -125,6 +124,8 @@ const pendingTask = (object) => {
   return result;
 };
 // console.log("Pending Tasks: ", pendingTask(projects));
+
+
 const CompletedTeam = (object) => {
   const result = [];
 
@@ -148,57 +149,29 @@ const CompletedTeam = (object) => {
 
   return result;
 };
-
 // console.log("Completed task team: ",CompletedTeam(projects))
 
-const CompletedTeamTaskCount = (object) => {
-  const result = [];
-
-  object.forEach(({ projectName, teams }) => {
-    let count = 0;
-    teams.forEach(({ members }) => {
-      members.forEach(({ tasks }) => {
-        tasks.forEach((task) => {
-          if (task.status === "Completed") {
-            count++;
-          }
-        });
-      });
-    });
-    result.push({
-      projectName,
-      completedTasks: count,
-    });
-  });
-
-  return result;
-};
+const CompletedTeamTaskCount = (data) =>
+  data.map(({ projectName, teams }) => ({
+    projectName,
+    completedTasks: teams.flatMap(t => t.members.flatMap(m => m.tasks))
+      .filter(t => t.status === "Completed").length,
+  }));
 // console.log("Completed task team Count: ", CompletedTeamTaskCount(projects));
 
-const PeopleNotAssigned = (object) => {
-  const result = [];
+const getPeopleNotAssigned = (data) =>
+  data.flatMap((item) =>
+    item.teams.flatMap((tasks) =>
+      tasks.members
+        .filter(
+          (member) =>
+            !member.tasks.some((task) => task.status === "In Progress")
+        )
+        .map((m) => ({ name: m.name, teamName: tasks.teamName }))
+    )
+  );
 
-  object.forEach(({ teams }) => {
-    teams.forEach(({ teamName, members }) => {
-      members.forEach(({ tasks, name }) => {
-        let count = 0;
-        tasks.forEach((task) => {
-          if (task.status == "In Progress") {
-            count++;
-          }
-        });
+console.log("Completed task team: ", getPeopleNotAssigned(projects));
 
-        if (count < 1) {
-          result.push({
-            name,
-            teamName,
-          });
-        }
-      });
-    });
-  });
 
-  return result;
-};
-
-// console.log("Completed task team: ", PeopleNotAssigned(projects));
+// jamal

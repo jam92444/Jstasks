@@ -31,3 +31,13 @@ function createObj(obj){
 
 const data = createObj(feature);
 console.log("Data: ",data)
+
+/*
+
+output:
+Data:  [
+  { img: '123', content: 'vbxvxvbvxnbcnmbcmnbmn', title: 'vbvbvbcvb' },
+  { img: '456', content: '671bxvxvbvxnbcnmbcmnbmn', title: '456' },    
+  { img: '789', content: 'vbxvxvbvxnbcnmbcmnbmn', title: '765' }       
+]
+*/
