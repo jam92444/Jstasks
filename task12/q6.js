@@ -35,27 +35,24 @@ const customers = [
 ];
 
 function customerData(customers) {
-  let sample = [];
-  customers.forEach(({ orders }) => {
-    orders.forEach(({ items }) =>
-      items.forEach((product) => sample.push(product))
-    );
-  });
-  const result = customers.map(({ customerId, name, orders }) => ({
-    customerId,
-    name,
-    totalSpent: orders
-      .map(({ items }) =>
-        items.map(({ price }) => price).reduce((acc, val) => acc + val, 0)
-      )
-      .reduce((acc, val) => acc + val, 0),
-    itemBreakdown: sample.reduce((acc, item) => {
-      acc[item.name] = 1;
-      return acc;
-    }, {}),
-  }));
+  return customers.map(({ customerId, name, orders }) => {
+    let totalSpent = 0;
+    const itemBreakdown = {};
 
-  return result;
+    orders.forEach(({ items }) => {
+      items.forEach(({ name: itemName, price }) => {
+        totalSpent += price;
+        itemBreakdown[itemName] = (itemBreakdown[itemName] || 0) + 1;
+      });
+    });
+
+    return {
+      customerId,
+      name,
+      totalSpent,
+      itemBreakdown,
+    };
+  });
 }
 
 const data = customerData(customers);
