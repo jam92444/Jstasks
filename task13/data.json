@@ -1,0 +1,178 @@
+{
+  
+  "id": 7,
+  "tour_name": null,
+  "destination": {
+    "name": "Kolli Hills",
+    "description": "Kolli hills where we can see Agaya Gangai",
+    "price": "2500"
+  },
+  "status": 1,
+  "complete_percent": 100,
+  "certified": null,
+  "rating": null,
+  "customer_review_count": 0,
+  "save_percent": "Save 40%",
+  "listing": {
+    "listing_id": 104,
+    "listing_master_id": 424,
+    "listing_classification_id": 23,
+    "listing_location_id": null
+  },
+  "service_provider_id": 604,
+  "available_seats_count": 4,
+  "max_travellers_count": 4,
+  "price": null,
+  "min_price": "0",
+  "max_price": "0",
+  "strike_price": "0",
+  "discount_id": null,
+  "promotions": null,
+  "pricing": null,
+  "return_policy": 0,
+  "addl_features": {
+    "feature1": "fhgdfshfg",
+    "feature2": "fghjshfgshfgjhuerwerw",
+    "feature3": null
+  },
+  "inclusions": [
+    {
+      "icon_url": "",
+      "inclusion_title": ""
+    },
+    {
+      "icon_url": "",
+      "inclusion_title": ""
+    }
+  ],
+  "inclusion_titles": [
+    {
+      "icon": "gffhh",
+      "title": "fgfghfg"
+    },
+    {
+      "icon": "fgfdgdfg",
+      "title": "gdfgd"
+    },
+    {
+      "icon": "fdgfdfg",
+      "title": "gdfghfh"
+    }
+  ],
+  "tour_benefits": [
+    {
+      "title": "travel in car",
+      "description": "we can travel in car and stay wherever we want and enjoy location",
+      "image": "https://ableaura.s3.ap-southeast-1.amazonaws.com/features/MqVOZfyGQBnuaw76AT9qvtIxdqFvxMANvbHgVe6n.png"
+    },
+    {
+      "title": null,
+      "description": null,
+      "image": "gfgff"
+    },
+    {
+      "title": "fdggg",
+      "description": "hhj",
+      "image": null
+    }
+  ],
+  "tour_short_desc": null,
+  "tour_long_desc": null,
+  "tour_credential": null,
+  "media": [
+    {
+      "id": 1168,
+      "uuid": "6bc3c610-745a-47e4-921a5815c8977a8e",
+      "collection_name": "gallery-main",
+      "name": "medialibraryHbsi5o",
+      "custom_properties": {
+        "provider": 813,
+        "isPrimary": false
+      },
+      "temporary_url": "https://ableaura.s3.ap-southeast-1.amazonaws.com/1168/media-libraryHbsi5o"
+    },
+    {
+      "id": 1213,
+      "uuid": "de4ee0df-f24b-4e0f-935d-31a9997e0674",
+      "collection_name": "gallery-main",
+      "name": "medialibrary6xqIRm",
+      "custom_properties": {
+        "provider": 604,
+        "isPrimary": false
+      },
+      "temporary_url": "https://ableaura.s3.ap-southeast-1.amazonaws.com/1213/media-library6xqIRm"
+    },
+    {
+      "id": 1214,
+      "uuid": "00776adc-48f6-4781-8058-64ccefec390e",
+      "collection_name": "gallerymain",
+      "name": "medialibrarynKNFih",
+      "custom_properties": {
+        "provider": 604,
+        "isPrimary": true
+      },
+      "temporary_url": "https://ableaura.s3.ap-southeast-1.amazonaws.com/1214/media-librarynKNFih"
+    }
+  ],
+  "trip_details": [
+    {
+      "id": 6,
+      "duration": "48 Hours",
+      "start_date": "2025-05-13",
+      "end_date": "2022-08-15",
+      "start_time": "04:00:00",
+      "end_time": "04:00:00"
+    },
+    {
+      "id": 7,
+      "duration": "48 Hours",
+      "start_date": "2025-03-13",
+      "end_date": "2022-09-15",
+      "start_time": "04:00:00",
+      "end_time": "04:00:00"
+    },
+    {
+      "id": 8,
+      "duration": "48 Hours",
+      "start_date": "2021-08-13",
+      "end_date": "2021-08-15",
+      "start_time": "04:00:00",
+      "end_time": "04:00:00"
+    },
+    {
+      "id": 69,
+      "duration": "48 Hours",
+      "start_date": "2022-10-13",
+      "end_date": "2022-10-15",
+      "start_time": "04:00:00",
+      "end_time": "04:00:00"
+    }
+  ],
+  "similar_destinations": [
+    {
+      "id": 1,
+      "service_provider_id": 813,
+      "listing_classification_id": 23,
+      "listing_master_id": 424
+    }
+  ],
+  "itinerary": [
+    {
+      "id": 5,
+      "listing_tour_id": 7,
+      "day_no": 1,
+      "day_description": "dfgdfgdf"
+    }
+  ],
+  "faqs": [],
+  "reviews": [],
+  "step1": 1,
+  "step2": 1,
+  "from_date": null,
+  "from_time": null,
+  "to_date": null,
+  "to_time": null,
+  "errors": null,
+  "message": "tour retrieved successfully",
+  "success": true
+}

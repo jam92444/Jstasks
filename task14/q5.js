@@ -149,7 +149,7 @@ const CompletedTeam = (object) => {
 
   return result;
 };
-// console.log("Completed task team: ",CompletedTeam(projects))
+console.log("Completed task team: ",CompletedTeam(projects))
 
 const CompletedTeamTaskCount = (data) =>
   data.map(({ projectName, teams }) => ({
@@ -171,7 +171,6 @@ const getPeopleNotAssigned = (data) =>
     )
   );
 
-console.log("Completed task team: ", getPeopleNotAssigned(projects));
+// console.log("Completed task team: ", getPeopleNotAssigned(projects));
 
 
-// jamal

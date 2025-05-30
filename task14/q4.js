@@ -94,7 +94,6 @@ const GroupItemWithName = (customer, unique) => {
     const purchases = customer[customerName];
     for (const key in purchases) {
       const items = purchases[key];
-      console.log(items)
       unique.forEach((prod) => {
         if (items.includes(prod)) {
           if (!finalObj[prod]) {
